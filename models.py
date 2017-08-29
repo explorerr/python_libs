@@ -32,5 +32,25 @@ def mae( pred, actu ):
     return np.abs(pred - actu).mean()
 
 ## data quality functions:
+# import numpy as np
+# from sklearn.preprocessing import Imputer
+# # missing_values is the value of your placeholder, strategy is if you'd like mean, median or mode, and axis=0 means it calculates the imputation based on the other feature values for that sample
+# imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
+# imp.fit(train)
+# Imputer(axis=0, copy=True, missing_values='NaN', strategy='mean', verbose=0)
+# train_imp = imp.transform(train)
+    
+def run_model( tr_df, ts_df, formular, add_params ):
+    
+    pass
 
+def select_feature( tr_df, ts_df, formular, select_feature, fixed_feature ):
+    
+    pass
+
+def moving_window_run_model( tr_df, ts_df, formular, seq_start, seq_end ):
+    
+    pass
+    
+    
     
